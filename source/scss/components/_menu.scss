@@ -2,13 +2,28 @@
 .sidebar-overlay {
     background: #00000042;
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     filter: blur(5px);
     height: 100%;
     left: -100%;
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 10;
+}
+
+a.cta-button {
+    position: absolute;
+    right: 101px;
+    top: 41px;
+    color: #fff;
+    border: 1px solid #1779e8;
+    padding: 6px 21px;
+    border-radius: 5px;
+    z-index: 9;
+    font-weight: bolder;
+    &:hover {
+        text-decoration: none;
+        background: #0000ff4d;
+    }
 }
 
 nav.sidebar {
@@ -18,7 +33,7 @@ nav.sidebar {
     left: -82%;
     margin: 0;
     padding: 20px 20px;
-    position: absolute;
+    position: fixed;
     width: 25%;
     z-index: 2;
     -webkit-transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
@@ -42,7 +57,7 @@ nav.sidebar {
     padding: 10px;
     right: 13px;
     top: 36px;
-    position: absolute;
+    position: fixed;
     border: none;
     border-radius: 0;
     line-height: 0;

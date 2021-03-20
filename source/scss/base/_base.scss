@@ -3,3 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('#{$cssimgpath}background-style.png');
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 2px;
+    width: 4px;
+    background: #fff;
+}
+
+ ::-webkit-scrollbar-thumb:horizontal {
+    background: linear-gradient(to bottom, #168fec 0%, #1b17d7 100%);
+    border-radius: 0px;
+}
+
+ ::-webkit-scrollbar-thumb:vertical {
+    background: linear-gradient(to bottom, #168fec 0%, #1b17d7 100%);
+    border-radius: 0px;
+}
