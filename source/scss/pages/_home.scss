@@ -84,6 +84,7 @@ canvas.particles-js-canvas-el {
         line-height: 1.3em;
         letter-spacing: 1px;
         color: $color-two-lignt-blue;
+        text-transform: uppercase;
     }
     p {
         color: #b4b4b4;
@@ -407,7 +408,9 @@ figure.box-img {
 
 .image-box-wrapper {
     padding: 14px;
-    background-image: linear-gradient(to right, #168fec 0%, #1b17d7 100%);
+    // background-image: linear-gradient(to right, #168fec 0%, #1b17d7 100%);
+    background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 3px;
     display: flex;
     color: #fff;
@@ -631,6 +634,9 @@ p.view-more {
 /////////////////////////////////////////////////////////
 ////////////////// BLOG CSS END //////////////////
 /////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+////////////////// CERTIFIED COMPANY CSS  START //////////////////
+/////////////////////////////////////////////////////////
 .main-fetured-item {
     position: relative;
     background: url('#{$cssimgpath}blur_image.png') no-repeat center center/cover;
@@ -675,4 +681,144 @@ p.view-more {
         width: 50%;
         margin-right: 5px;
     }
+}
+
+/////////////////////////////////////////////////////////
+////////////////// CERTIFIED COMPANY CSS  END //////////////////
+/////////////////////////////////////////////////////////
+.footer-sec {
+    background: url('#{$cssimgpath}footer_image.png') no-repeat center center;
+    background-size: cover;
+    padding: 70px;
+    position: relative;
+}
+
+.footer-sec {
+    .sub_title {
+        a {
+            color: cyan;
+            font-size: 18px;
+            font-weight: 600;
+            &:hover {
+                text-decoration: none;
+                span {
+                    color: #fff
+                }
+            }
+        }
+        span {
+            position: relative;
+            font-weight: 400;
+            color: #dbe3e3;
+            text-transform: uppercase;
+            font-size: 18px;
+            margin: 0 10px;
+            &:after {
+                position: absolute;
+                content: "";
+                top: 10px;
+                bottom: 0;
+                right: -12px;
+                width: 4px;
+                height: 4px;
+                background: cyan;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.copy-text p {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+.banner_social_link {
+    margin: 35px 0;
+    li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+    a {
+        position: relative;
+        display: block;
+        width: 45px;
+        height: 45px;
+        color: #dbe3e3;
+        font-size: 22px;
+        line-height: 45px;
+        border-radius: 50%;
+        border: 1px solid #1fe482;
+        text-decoration: none;
+        transition: 0.3s;
+        z-index: 0;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            border-radius: 50%;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            transition: 0.3s;
+            z-index: -1;
+        }
+    }
+}
+
+.banner_social_link a:hover:before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.banner_social_link a:hover {
+    color: #1fe482;
+}
+
+.w-text {
+    color: cyan;
+}
+
+.card-style {
+    display: block;
+    position: relative;
+    height: 220px;
+    width: 221px;
+    background: #fff;
+    padding: 63px 20px 20px 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+tag {
+    display: block;
+    padding: 8px 14px;
+    position: absolute;
+    right: -14px;
+    top: 20px;
+    background-color: darkblue;
+    color: dodgerblue;
+    border-top-right-radius: 7px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    &::after {
+        display: block;
+        content: "";
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        background-color: dodgerblue;
+        right: 0;
+        bottom: -14px;
+        border-bottom-right-radius: 14px;
+    }
+}
+
+.warp-style {
+    display: grid;
+    align-content: center;
+    justify-content: center;
 }
