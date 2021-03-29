@@ -8,7 +8,7 @@ marquee {
 
 .banner-head {
     // background: $color-navy-blue;
-    background: linear-gradient($color-navy-blue, #02174e00);
+    background: linear-gradient($color-navy-blue, $transparent-navy-blue);
     width: 100%;
     height: 100vh;
 }
@@ -87,7 +87,7 @@ canvas.particles-js-canvas-el {
         text-transform: uppercase;
     }
     p {
-        color: #b4b4b4;
+        color: $color-gray;
     }
 }
 
@@ -95,7 +95,7 @@ canvas.particles-js-canvas-el {
     width: 80%;
     h3 {
         font-size: 22px;
-        color: #94d0ff;
+        color: $sub-heading;
     }
 }
 
@@ -111,6 +111,22 @@ canvas.particles-js-canvas-el {
     p {
         font-size: 18px;
     }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-5px)
+    }
+    50% {
+        transform: translateY(10px)
+    }
+    100% {
+        transform: translateY(-5px)
+    }
+}
+
+#zio {
+    animation: bounce 3s infinite ease-in-out;
 }
 
 ////////////////////////////////////
@@ -134,7 +150,7 @@ canvas.particles-js-canvas-el {
     display: block;
     background-size: cover;
     background-position: center;
-    background-image: url("http://www.ivang-design.com/svg-load/video.jpg");
+    background-image: url('#{$cssimgpath}video.jpg');
     filter: blur(6px);
 }
 
@@ -144,14 +160,10 @@ canvas.particles-js-canvas-el {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 10px solid #060606;
+    border: 10px solid $transparent-black;
     z-index: 9;
     display: block;
 }
-
-
-/* Video
-================================================== */
 
 .wrap-rel {
     position: relative;
@@ -171,10 +183,6 @@ canvas.particles-js-canvas-el {
     transform: translateY(-50%);
     z-index: 9;
 }
-
-
-/* #Video wrapper
-================================================== */
 
 .video-section {
     position: relative;
@@ -211,7 +219,7 @@ figure.youtube a:after {
     content: "";
     width: 60px;
     height: 60px;
-    background: #fff;
+    background: $color-white;
     z-index: 9;
     position: absolute;
     top: 50%;
@@ -219,7 +227,8 @@ figure.youtube a:after {
     margin: -30px 0 0 -30px;
     border-radius: 50%;
     box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.15);
-    cursor: url('http://www.ivang-design.com/svg-load/play.png') 30 30, pointer;
+    cursor: url('#{$cssimgpath}play.png') 30 30,
+    pointer;
     -webkit-transition: all 300ms linear;
     transition: all 300ms linear;
 }
@@ -253,7 +262,8 @@ figure.youtube a:before {
     margin-left: -3px;
     margin-top: -5px;
     display: block;
-    cursor: url('http://www.ivang-design.com/svg-load/play.png') 30 30, pointer;
+    cursor: url('#{$cssimgpath}play.png') 30 30,
+    pointer;
     -webkit-transition: all 300ms linear;
     transition: all 300ms linear;
 }
@@ -274,41 +284,13 @@ figure.youtube a img {
     -webkit-transition: all 300ms linear;
     transition: all 300ms linear;
     border-radius: 10px;
-    cursor: url('http://www.ivang-design.com/svg-load/play.png') 30 30, pointer;
+    cursor: url('#{$cssimgpath}play.png') 30 30,
+    pointer;
 }
 
 ////////////////////////////////////
 /////////////////////////////////// VIDEO section END /////////////////////////////////////
 ///////////////////////////////////
-// .box {
-//     position: relative;
-//     width: 200px;
-//     height: 200px;
-//     border-radius: 50%;
-//     background: linear-gradient(45deg, transparent, transparent 40%, yellow), linear-gradient(#262626, #141414);
-//     animation: rotate 1.5s linear infinite;
-//     &:before,
-//     &:after {
-//         content: " ";
-//         position: absolute;
-//         top: 8px;
-//         left: 8px;
-//         right: 8px;
-//         bottom: 8px;
-//         background: linear-gradient(#161616, #262626);
-//         border-radius: inherit;
-//     }
-//     &:before {
-//         background: linear-gradient(45deg, transparent, transparent 40%, yellow);
-//         filter: blur(32px);
-//     }
-// }
-// @keyframes rotate {
-//     100% {
-//         transform: rotate(360deg);
-//         filter: hue-rotate(360deg);
-//     }
-// }
 .counter-style {
     text-align: center;
     h3 {
@@ -318,7 +300,7 @@ figure.youtube a img {
         animation: neon infinite 1.3s;
     }
     p {
-        color: #168fec;
+        color: $color-two-lignt-blue;
         font-weight: 500;
         font-size: 18px;
     }
@@ -362,11 +344,11 @@ button.close.close-video {
     width: 10px;
     position: fixed;
     right: 5px;
-    background: #fff;
+    background: $color-white;
     width: 35px;
     height: 36px;
     border-radius: 26px;
-    color: #1a1dd8;
+    color: $color-one-dark-blue;
     padding-bottom: 4px;
     opacity: 1;
 }
@@ -408,12 +390,14 @@ figure.box-img {
 
 .image-box-wrapper {
     padding: 14px;
-    // background-image: linear-gradient(to right, #168fec 0%, #1b17d7 100%);
-    background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, $gradient-color-one, $gradient-color-two, $color-white);
     border-radius: 3px;
     display: flex;
-    color: #fff;
+    color: $color-black;
+}
+
+.box-content-alag {
+    background: linear-gradient(to left, $gradient-color-one, $gradient-color-two, $color-white);
 }
 
 .image-box-description {
@@ -424,7 +408,7 @@ figure.box-img {
     .image-box-title {
         font-weight: bolder;
         font-size: 17px;
-        color: #fff;
+        color: $color-black;
     }
 }
 
@@ -444,7 +428,7 @@ figure.box-img {
 .latest-news-disc {
     p {
         margin-bottom: 0;
-        color: #b4b4b4;
+        color: $color-gray;
         text-align: justify;
     }
 }
@@ -465,7 +449,7 @@ figure.box-img {
 
 .old-news-disc {
     p {
-        color: #b4b4b4;
+        color: $color-gray;
         text-align: justify;
     }
 }
@@ -491,14 +475,14 @@ p.view-more {
     iframe {
         height: 50vh;
         width: 100%;
-        border: 5px solid #868686;
+        border: 5px solid $color-dark-gray;
     }
 }
 
 .block-button {
     border: none;
     outline: none;
-    color: #000;
+    color: $color-black;
     padding: 3px;
     position: relative;
     display: inline-block;
@@ -514,8 +498,8 @@ p.view-more {
         top: 50%;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
-        border-left: solid 1px #fff;
-        border-right: solid 1px #fff;
+        border-left: solid 1px $color-white;
+        border-right: solid 1px $color-white;
     }
     span {
         -webkit-user-select: none;
@@ -526,10 +510,10 @@ p.view-more {
     }
     &:hover {
         cursor: pointer;
-        background-color: #1874e8;
+        background-color: $color-two-lignt-blue;
         border: none;
-        border-color: #1874e8;
-        color: #fff !important;
+        border-color: $color-two-lignt-blue;
+        color: $color-white !important;
         &:after {
             border: 0;
         }
@@ -551,7 +535,7 @@ p.view-more {
         height: 100%;
         padding: 8px 30px;
         position: relative;
-        border: solid 1px #fff;
+        border: solid 1px $color-white;
         &:before {
             left: 0;
         }
@@ -564,10 +548,9 @@ p.view-more {
         height: 100%;
         top: -1px;
         left: 50%;
-        -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
-        border-top: solid 1px #fff;
-        border-bottom: solid 1px #fff;
+        border-top: solid 1px $color-white;
+        border-bottom: solid 1px $color-white;
     }
 }
 
@@ -590,7 +573,7 @@ p.view-more {
             width: 51%;
             height: 100%;
             top: 0;
-            background-color: #fff;
+            background-color: $color-white;
             z-index: -1;
             -webkit-transition: width .5s ease;
             transition: width .5s ease;
@@ -612,7 +595,7 @@ p.view-more {
         position: relative;
         .card-body {
             padding: 25px 10px 29px 18px;
-            background-color: #fff;
+            background-color: $color-white;
             position: absolute;
             left: 20px;
             bottom: -50px;
@@ -660,7 +643,7 @@ p.view-more {
 
 .glass-heading {
     text-align: center;
-    color: #fff;
+    color: $color-white;
     h4 {
         margin-bottom: 20px;
     }
@@ -686,6 +669,55 @@ p.view-more {
 /////////////////////////////////////////////////////////
 ////////////////// CERTIFIED COMPANY CSS  END //////////////////
 /////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+////////////////// location CSS  start //////////////////
+/////////////////////////////////////////////////////////
+.card-style {
+    display: block;
+    position: relative;
+    height: 220px;
+    width: 221px;
+    background: $color-white;
+    padding: 63px 20px 20px 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+tag {
+    display: block;
+    padding: 8px 14px;
+    position: absolute;
+    right: -14px;
+    top: 20px;
+    background-color: $color-one-dark-blue;
+    color: $gradient-color-two;
+    border-top-right-radius: 7px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    &::after {
+        display: block;
+        content: "";
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        background-color: $color-two-lignt-blue;
+        right: 0;
+        bottom: -14px;
+        border-bottom-right-radius: 14px;
+    }
+}
+
+.warp-style {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+/////////////////////////////////////////////////////////
+////////////////// LOCATION CSS  END //////////////////
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+////////////////// Footer CSS  start //////////////////
+/////////////////////////////////////////////////////////
 .footer-sec {
     background: url('#{$cssimgpath}footer_image.png') no-repeat center center;
     background-size: cover;
@@ -696,20 +728,20 @@ p.view-more {
 .footer-sec {
     .sub_title {
         a {
-            color: cyan;
+            color: $color-cyan;
             font-size: 18px;
             font-weight: 600;
             &:hover {
                 text-decoration: none;
                 span {
-                    color: #fff
+                    color: $color-white
                 }
             }
         }
         span {
             position: relative;
             font-weight: 400;
-            color: #dbe3e3;
+            color: $color-white;
             text-transform: uppercase;
             font-size: 18px;
             margin: 0 10px;
@@ -721,7 +753,7 @@ p.view-more {
                 right: -12px;
                 width: 4px;
                 height: 4px;
-                background: cyan;
+                background: $color-cyan;
                 border-radius: 50%;
             }
         }
@@ -730,7 +762,7 @@ p.view-more {
 
 .copy-text p {
     text-align: center;
-    color: #fff;
+    color: $color-white;
     margin: 0;
 }
 
@@ -749,7 +781,7 @@ p.view-more {
         font-size: 22px;
         line-height: 45px;
         border-radius: 50%;
-        border: 1px solid #1fe482;
+        border: 1px solid $color-cyan;
         text-decoration: none;
         transition: 0.3s;
         z-index: 0;
@@ -776,49 +808,13 @@ p.view-more {
 }
 
 .banner_social_link a:hover {
-    color: #1fe482;
+    color: $color-one-dark-blue;
 }
 
 .w-text {
-    color: cyan;
+    color: $color-cyan;
 }
 
-.card-style {
-    display: block;
-    position: relative;
-    height: 220px;
-    width: 221px;
-    background: #fff;
-    padding: 63px 20px 20px 20px;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-tag {
-    display: block;
-    padding: 8px 14px;
-    position: absolute;
-    right: -14px;
-    top: 20px;
-    background-color: darkblue;
-    color: dodgerblue;
-    border-top-right-radius: 7px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    &::after {
-        display: block;
-        content: "";
-        height: 14px;
-        width: 14px;
-        position: absolute;
-        background-color: dodgerblue;
-        right: 0;
-        bottom: -14px;
-        border-bottom-right-radius: 14px;
-    }
-}
-
-.warp-style {
-    display: grid;
-    align-content: center;
-    justify-content: center;
-}
+/////////////////////////////////////////////////////////
+////////////////// Footer CSS  END //////////////////
+/////////////////////////////////////////////////////////
