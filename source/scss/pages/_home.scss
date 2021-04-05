@@ -52,6 +52,16 @@ marquee {
     transform: translate3d(7%, -50%, 0);
 }
 
+.heder-title {
+    text-align: center;
+    color: #fff;
+    // position: absolute;
+    margin-top: 15px;
+    h5 {
+        font-size: 18px;
+    }
+}
+
 div#particles-js {
     position: relative;
     width: 100%;
@@ -106,10 +116,11 @@ canvas.particles-js-canvas-el {
 }
 
 .about-content {
-    max-width: 93%;
+    max-width: 98%;
     margin: 0 auto;
     p {
         font-size: 18px;
+        text-align: justify;
     }
 }
 
