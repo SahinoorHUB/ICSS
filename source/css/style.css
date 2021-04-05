@@ -12,6 +12,7 @@ html {
 
 body {
   background-image: url("../images/background-style.png");
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {

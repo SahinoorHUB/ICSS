@@ -10,6 +10,7 @@ html {
 
 body {
     background-image: url('#{$cssimgpath}background-style.png');
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
