@@ -29,3 +29,12 @@ body {
     background: linear-gradient(to bottom, #168fec 0%, #1b17d7 100%);
     border-radius: 0px;
 }
+
+.js body {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.js body.render {
+    opacity: 1;
+}
