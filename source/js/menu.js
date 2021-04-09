@@ -157,17 +157,22 @@ class ShapeOverlays {
         }
         overlay.toggle();
         if (overlay.isOpened === true) {
-            elmHamburger.classList.add('is-opened-navi');
+
             document.getElementById("fixed-content").style.display = "block";
+            // setTimeout(function() {
+            //     $('.notice').fadeIn(3000);
+            // }, 3000);
+            elmHamburger.classList.add('is-opened-navi');
             for (var i = 0; i < gNavItems.length; i++) {
                 gNavItems[i].classList.add('is-opened');
             }
         } else {
             elmHamburger.classList.remove('is-opened-navi');
-            document.getElementById("fixed-content").style.display = "none";
             for (var i = 0; i < gNavItems.length; i++) {
                 gNavItems[i].classList.remove('is-opened');
             }
         }
     });
 }());
+
+function myFunction() {}
