@@ -159,9 +159,6 @@ class ShapeOverlays {
         if (overlay.isOpened === true) {
 
             document.getElementById("fixed-content").style.display = "block";
-            // setTimeout(function() {
-            //     $('.notice').fadeIn(3000);
-            // }, 3000);
             elmHamburger.classList.add('is-opened-navi');
             for (var i = 0; i < gNavItems.length; i++) {
                 gNavItems[i].classList.add('is-opened');
