@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css'>
@@ -122,6 +121,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section">
@@ -134,21 +134,10 @@
                                             <div class="col-8">
                                                 <div class="video-section">
                                                     <figure class="vimeo">
-                                                        <a data-toggle="modal" data-target=".bd-example-modal-lg">
+                                                        <a data-toggle="modal" data-target="#tellmemore">
                                                             <img src="source/images/video-main.jpg" alt="image" />
                                                         </a>
                                                     </figure>
-                                                </div>
-                                                <div class="modal fade bd-example-modal-lg upper-model" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                                    <div class="modal-dialog  modal-dialog-centered modal-lg">
-                                                        <div class="modal-content video-model">
-
-                                                            <iframe src="https://www.youtube.com/embed/jcP5RvUy4OU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                            <button type="button" class="close close-video" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                          </button>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -160,6 +149,19 @@
                 </div>
             </div>
         </section>
+        <div class="modal fade" id="tellmemore" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog  modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body video-model">
+                        <button type="button" class="close video-close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <iframe src="https://www.youtube.com/embed/jcP5RvUy4OU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- WANT TO KNOW ABOUT US ? section end  -->
 
         <!-- VA&PT SERVICES section start  -->
@@ -595,15 +597,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "></script>
-    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js "></script>
-    <!-- <script src='source/js/TweenLite.min.js'></script>
-    <script src='source/js/EasePack.min.js'></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js "></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="source/js/menu.js "></script>
     <script src="source/js/custom.js "></script>
 </body>
 

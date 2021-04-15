@@ -1146,7 +1146,8 @@ figure.youtube a img {
 }
 
 .video-model iframe {
-  height: 98vh;
+  height: 93vh;
+  width: 100%;
 }
 
 .modal-dialog.modal-dialog-centered.modal-lg {
@@ -1155,17 +1156,9 @@ figure.youtube a img {
   overflow: hidden;
 }
 
-button.close.close-video {
-  width: 10px;
-  position: fixed;
-  right: 5px;
-  background: #fff;
-  width: 35px;
-  height: 36px;
-  border-radius: 26px;
-  color: #1b17d7;
-  padding-bottom: 4px;
-  opacity: 1;
+button.close.video-close {
+  margin-top: -15px;
+  margin-bottom: 5px;
 }
 
 .mid-align {

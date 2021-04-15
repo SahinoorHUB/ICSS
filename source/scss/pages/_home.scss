@@ -337,7 +337,8 @@ figure.youtube a img {
 
 .video-model {
     iframe {
-        height: 98vh;
+        height: 93vh;
+        width: 100%;
     }
 }
 
@@ -347,17 +348,9 @@ figure.youtube a img {
     overflow: hidden;
 }
 
-button.close.close-video {
-    width: 10px;
-    position: fixed;
-    right: 5px;
-    background: $color-white;
-    width: 35px;
-    height: 36px;
-    border-radius: 26px;
-    color: $color-one-dark-blue;
-    padding-bottom: 4px;
-    opacity: 1;
+button.close.video-close {
+    margin-top: -15px;
+    margin-bottom: 5px;
 }
 
 /////////////////////////////////////////////////////////
