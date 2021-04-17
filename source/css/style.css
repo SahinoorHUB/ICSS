@@ -855,6 +855,12 @@ div#particles-js {
   height: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  div#particles-js {
+    height: auto;
+  }
+}
+
 canvas.particles-js-canvas-el {
   position: absolute;
   left: 0;
@@ -883,8 +889,21 @@ canvas.particles-js-canvas-el {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 768px) {
+  .heading-sub-banner h2 {
+    text-align: center;
+    font-size: 25px;
+  }
+}
+
 .heading-sub-banner p {
   color: #b4b4b4;
+}
+
+@media only screen and (max-width: 768px) {
+  .heading-sub-banner p {
+    text-align: center;
+  }
 }
 
 .two-type {
@@ -896,8 +915,28 @@ canvas.particles-js-canvas-el {
   color: #94d0ff;
 }
 
+@media only screen and (max-width: 768px) {
+  .two-type h3 {
+    font-size: 20px;
+    margin-top: -11px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .two-type p {
+    text-align: left;
+    font-size: 15px;
+  }
+}
+
 .two-type-icon img {
   width: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  .two-type-icon img {
+    width: 72px;
+  }
 }
 
 .about-content {

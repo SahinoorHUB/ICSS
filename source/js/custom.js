@@ -176,7 +176,7 @@ class ShapeOverlays {
 // (Hamburger menu) END
 
 // AOS Animation start
-AOS.init();
+// AOS.init();
 // AOS Animation End
 
 // banner background
