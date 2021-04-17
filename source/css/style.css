@@ -700,6 +700,16 @@ main.main.main--icss {
   }
 }
 
+main.main.main--icss {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  main.main.main--icss {
+    display: none;
+  }
+}
+
 .footer-sec {
   background: url("../images/footer_image.png") no-repeat center center;
   background-size: cover;

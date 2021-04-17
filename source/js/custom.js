@@ -322,3 +322,11 @@ $(document).ready(function() {
     });
 });
 // BRANDS THAT TRUST OUR COMPETENCIES END
+
+// iframe video close when click model close button start
+$(function() {
+    $('.close').click(function() {
+        $('.model-video').attr('src', $('iframe').attr('src'));
+    });
+});
+// iframe video close when click model close button start
