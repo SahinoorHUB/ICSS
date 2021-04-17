@@ -1292,6 +1292,12 @@ button.close.video-close {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .mid-align {
+    width: 100%;
+  }
+}
+
 .widget-container {
   width: 100%;
   margin: 0;
@@ -1343,6 +1349,13 @@ figure.box-img {
   margin: 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .image-box-description {
+    font-size: 15px;
+    line-height: 1.3em;
+  }
+}
+
 .image-box-content .image-box-title {
   font-weight: bolder;
   font-size: 17px;
@@ -1354,10 +1367,23 @@ figure.box-img {
   height: 46vh;
 }
 
+@media only screen and (max-width: 768px) {
+  .latest-news iframe {
+    height: auto;
+  }
+}
+
 .latest-news-disc p {
   margin-bottom: 0;
   color: #b4b4b4;
   text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  .latest-news-disc p {
+    text-align: center;
+    font-size: 15px;
+  }
 }
 
 .old-news-image {

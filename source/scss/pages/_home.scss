@@ -437,6 +437,9 @@ button.close.video-close {
 .mid-align {
     width: 85%;
     margin: 0 auto;
+    @include for-phone {
+        width: 100%;
+    }
 }
 
 .widget-container {
@@ -486,6 +489,10 @@ figure.box-img {
 
 .image-box-description {
     margin: 0;
+    @include for-phone {
+        font-size: 15px;
+        line-height: 1.3em;
+    }
 }
 
 .image-box-content {
@@ -506,6 +513,9 @@ figure.box-img {
     iframe {
         width: 100%;
         height: 46vh;
+        @include for-phone {
+            height: auto;
+        }
     }
 }
 
@@ -514,6 +524,10 @@ figure.box-img {
         margin-bottom: 0;
         color: $color-gray;
         text-align: justify;
+        @include for-phone {
+            text-align: center;
+            font-size: 15px;
+        }
     }
 }
 
